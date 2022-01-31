@@ -1,0 +1,376 @@
+
+
+
+
+
+
+
+
+body{
+    --interface-color: #f2f2f2;
+    --interface-border-color: gainsboro;
+    --text-color: #222222;
+    --background-color: white;
+    --video-background-color: #dadada;
+    --link-color-rgb: #03C;
+    --visited-link-color-rgb: 85, 26, 139;
+    --grey-text-color: #666;
+}
+
+
+
+
+
+main > ul::after
+{
+  content: "\00a0" url(img/player.png);
+  position: relative;
+  top: -88px;
+  right: -255px;
+}
+
+
+div.video-section
+{
+  padding-top: 40px;
+}
+
+a.sub-manager-link::after, ol.sub-refresh-list > li.sidebar-list-item > a.sidebar-item-name::after
+{
+  content: "\00a0" url(img/page.gif);
+  padding-right: 5px;
+  position: absolute;
+}
+
+form.refresh-all > input, form.sidebar-item-refresh > input
+{
+  visibility: hidden;
+}
+
+
+span.direct-link::before
+{
+  content: "\00a0" url(img/tube.gif);
+  padding-right: 5px;
+}
+
+
+div.thumbnail-info
+{
+  position: relative;
+  text-decoration: none !important;
+  margin-right: -245px;
+  font-weight: bold;
+  background-color: transparent !important;
+  color: black !important;
+}
+
+
+a.title
+{
+  color: var(--link-color-rgb) !important;
+}
+
+form.channel-search
+{
+  position: relative;
+  bottom: -4px;
+}
+
+
+#site-search
+{
+  background: linear-gradient(#cacaca,#eaeaea);
+  border-radius: 10px;
+}
+
+#home-link
+{
+  color: black;
+  height: 30px;
+  background: linear-gradient(#fff,#cacaca);
+  width: 125px;
+  line-height: 28px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  border-style: solid;
+  border-width: 1px;
+  right: -135px;
+  border-color: #cacaca;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+div.subscriptions-sidebar
+{
+  height: 425px;
+  bottom: -40px;
+  position: relative;
+}
+
+div.video-item, div.playlist-item, div.channel-item-box
+{
+  width: 600px !important;
+}
+
+
+div.comment, span.description
+{
+  background-color: #fff;
+justify-content: start;
+border-style: solid;
+border-width: .1px;
+border-color: gainsboro;
+}
+
+a.author, address > a
+{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.author:hover, address > a:hover
+{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+form.subscribe-unsubscribe > Input
+{
+  height: 30px;
+  color: #994800;
+  background: linear-gradient(#fff,#ffe037);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #ffd017;
+  border-width: 1px;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+}
+
+div.autoplay-toggle-container 
+{
+  margin-bottom: 10px;
+  right: -285px;
+  position: relative;
+}
+
+a.permalink
+{
+  text-decoration: none;
+}
+
+a.permalink::before
+{
+  content: '(';
+}
+
+a.permalink::after
+{
+  content: ')';
+}
+
+a.permalink, time.datetime
+{
+  color: var(--grey-text-color) !important;
+}
+
+div.live-url-choices
+{
+  background-color: var(--interface-color);
+  border-color: var(--interface-border-color);
+  border-style: solid;
+  border-width: .1px;
+}
+
+
+main
+{
+  padding-right: 0px;
+}
+
+hr
+{
+  color: #eeeeee;
+}
+
+div.channel-metadata
+{
+  display: flex;
+  position: relative;
+  right: -5px;
+}
+
+#playlist-edit
+{
+  color: black;
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-width: .1px;
+  border-color: gainsboro;
+  height: 50px;
+  display: grid;
+  position: relative;
+  right: -15px;
+}
+
+#playlist-add-button::before
+{
+  content: "\00a0" url(img/add.gif);
+  padding-right: 5px;
+}
+
+#item-selection-reset::before
+{
+  content: "\00a0" url(img/x.gif);
+  padding-right: 5px;
+}
+
+a {
+  color: var(--link-color-rgb);
+}
+
+
+summary::marker, li::marker
+{
+  content: url('img/arrow-r.gif') " " !important;
+}
+
+
+details > summary
+{
+  border-style: none !important;
+  background-color: transparent !important;
+}
+
+comment.author-name
+{color: var(--link-color-rgb) !important;}
+
+details.replies > summary
+{
+  border-style: none !important;
+  border-width: 0px;
+  color: var(--link-color-rgb);
+  text-decoration: underline;
+  font-weight: normal !important;
+}
+
+
+input.item-checkbox
+{
+  align-self: baseline;
+  height: 20px;
+  width: 20px;
+  min-width: 30px;
+  margin: 0px;
+}
+
+span.likes-dislikes::before
+{
+  content: url('img/star.gif');
+}
+
+span.likes
+{
+  color: gray;
+}
+
+span.likes::before {
+  content: url('img/dislike.gif') '' url('img/like.gif') ' ';
+}
+
+input[type="text"], input.search-box
+{
+  border-style: solid !important;
+  border-width: .1px !important;
+  border-color: rgb(110, 110, 110) !important;
+}
+
+div.item, div.video-item, form.settings-form
+{
+  color: black;
+  background-color: #fbfbfb;
+  border-style: solid;
+  border-width: .1px;
+  border-color: gainsboro;
+  border-right-width: 1px;
+  border-right-color: rgb(189, 189, 189);
+}
+
+
+img.thumbnail-img
+{
+  border-style: double;
+  border-width: 5px;
+  border-color: gray;
+}
+
+div.page-button, a.page-button
+{
+  background-color: transparent;
+  border-style: none;
+  font-weight: normal;
+}
+
+nav.page-button-row
+{
+  justify-content: unset
+}
+
+span.description
+{
+  color: black;
+}
+
+img.avatar
+{
+ height: 100px; 
+ width: 100px;
+ border-style: double;
+ border-width: 3px;
+}
+
+#home-link
+{
+  color:black;
+}
+
+label.filter-dropdown-toggle-button
+{
+  background: transparent;
+  border-style: none;
+  color: var(--link-color-rgb);
+  text-decoration: underline;
+}
+
+header{
+ background-color: white;
+ padding-top: 70px !important;
+}
+
+button {
+  background: linear-gradient(#fff,#bdbdbd);
+  border-radius: 5px !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: rgb(139, 139, 139) !important;
+}
+
+.comment .permalink{
+    color: #000000;
+}
+
+.setting-item{
+    background-color: #eeeeee;
+}
+
+.muted{
+    background-color: #888888;
+}
